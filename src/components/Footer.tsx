@@ -19,6 +19,10 @@ const Footer: React.FC = () => {
             <div className="mb-6">
               <WhatsAppButton size="md" location="footer" />
             </div>
+            <div className="text-gray-400">
+              <p className="mb-2">יצירת קשר בטלפון: 052-8919886</p>
+              <p>כתובת: בר יהודה 10 קרית אונו</p>
+            </div>
           </div>
           
           <div className="grid grid-cols-2 gap-8">
