@@ -5,6 +5,7 @@ export const siteContent = {
     { name: "יתרונות", href: "#benefits" },
     { name: "המלצות", href: "#testimonials" },
     { name: "שאלות נפוצות", href: "#faq" },
+    { name: "יצירת קשר", href: "#contact" }
   ],
   hero: {
     title: "למה לקנות יקר אם אפשר לקנות חכם?",
