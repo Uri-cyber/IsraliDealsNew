@@ -43,3 +43,5 @@ const TelegramButton: React.FC<TelegramButtonProps> = ({ size, location }) => {
     </a>
   );
 };
+
+export default TelegramButton
