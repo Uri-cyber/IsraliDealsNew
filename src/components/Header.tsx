@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Check } from 'lucide-react';
 import WhatsAppButton from './WhatsAppButton';
+import TelegramButton from './TelegramButton';
 import { siteContent } from '../utils/content';
 
 const Header: React.FC = () => {
@@ -48,7 +49,10 @@ const Header: React.FC = () => {
               {item.name}
             </a>
           ))}
-          <WhatsAppButton size="sm" location="header" />
+          <div className="flex items-center space-x-4 space-x-reverse">
+            <WhatsAppButton size="sm" location="header" />
+            <TelegramButton size="sm" location="header" />
+          </div>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -75,14 +79,12 @@ const Header: React.FC = () => {
                 {item.name}
               </a>
             ))}
-            <div className="py-2">
+            <div className="py-2 space-y-2">
               <WhatsAppButton size="full" location="mobile-menu" />
+              <TelegramButton size="full" location="mobile-menu" />
             </div>
           </div>
         </div>
       )}
     </header>
   );
-};
-
-export default Header;

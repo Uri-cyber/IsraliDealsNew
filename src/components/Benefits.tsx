@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ShoppingBag, Truck, Tag, Shield, ThumbsUp, User } from 'lucide-react';
 import { siteContent } from '../utils/content';
 import WhatsAppButton from './WhatsAppButton';
+import TelegramButton from './TelegramButton';
 
 const BenefitCard: React.FC<{
   icon: React.ReactNode;
@@ -74,13 +75,15 @@ const Benefits: React.FC = () => {
 
         <div className="mt-12 text-center">
           <p className="text-white text-lg mb-6 animate-bounce">{siteContent.benefits.callToAction}</p>
-          <div className="transform hover:scale-110 transition-transform duration-300">
-            <WhatsAppButton size="lg" location="benefits" />
+          <div className="flex justify-center items-center space-x-4 space-x-reverse">
+            <div className="transform hover:scale-110 transition-transform duration-300">
+              <WhatsAppButton size="lg" location="benefits" />
+            </div>
+            <div className="transform hover:scale-110 transition-transform duration-300">
+              <TelegramButton size="lg" location="benefits" />
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default Benefits;

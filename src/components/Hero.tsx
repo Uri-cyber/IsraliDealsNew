@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ShoppingBag, Truck, Tag, Check } from 'lucide-react';
 import WhatsAppButton from './WhatsAppButton';
+import TelegramButton from './TelegramButton';
 import { siteContent } from '../utils/content';
 
 const Hero: React.FC = () => {
@@ -43,8 +44,13 @@ const Hero: React.FC = () => {
               ))}
             </div>
             
-            <div className="transform hover:scale-110 transition-transform duration-300">
-              <WhatsAppButton size="lg" location="hero" />
+            <div className="flex space-x-4 space-x-reverse">
+              <div className="transform hover:scale-110 transition-transform duration-300">
+                <WhatsAppButton size="lg" location="hero" />
+              </div>
+              <div className="transform hover:scale-110 transition-transform duration-300">
+                <TelegramButton size="lg" location="hero" />
+              </div>
             </div>
           </div>
           
@@ -75,6 +81,3 @@ const Hero: React.FC = () => {
       </div>
     </section>
   );
-};
-
-export default Hero;
