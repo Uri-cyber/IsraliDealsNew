@@ -87,3 +87,6 @@ const Benefits: React.FC = () => {
       </div>
     </section>
   );
+};
+
+export default Benefits;
